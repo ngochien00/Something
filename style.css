@@ -1,0 +1,308 @@
+html,
+body {
+    width: 100% !important;
+    height: 100%!important;
+}
+
+body {
+    font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif!important;
+    background-color: #282828!important;
+    color: #d3d3d3!important;
+}
+
+.navbar-default {
+    border-color: #222!important;
+    font-family: Comic Sans, Comic Sans MS, cursive!important;
+    background-color: #222 !important;
+}
+
+#space-before-video {
+    height: 3vh;
+}
+
+.navbar-header>.navbar-brand {
+    font-family: Comic Sans, Comic Sans MS, cursive!important;
+    color: #9c27b0!important;
+    font-size: 200% !important;
+    padding: 15px!important;
+}
+
+.navbar-header>.navbar-brand:hover {
+    text-shadow: #9c27b0 1px 1px 2px !important;
+}
+
+.navbar-header>.navbar-toggle,
+.navbar-default .navbar-collapse {
+    background-color: #222!important;
+    border-color: transparent !important;
+}
+
+.navbar-header>.navbar-toggle:hover,
+.navbar-header>.navbar-toggle:focus {
+    background-color: #181818 !important;
+    border-color: transparent !important;
+}
+
+.navbar-default .nav>li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #9c27b0;
+    text-shadow: #be28d8 1px 1px 2px;
+}
+
+.navbar-default .nav>li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #9c27b0 !important;
+    background-color: transparent;
+}
+
+.navbar-default .nav>li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+#header {
+    background-color: ;
+}
+
+header video {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #space-before-video {
+        display: none;
+    }
+    .navbar-right {
+        padding-right: 5% !important;
+    }
+    .navbar-default {
+        font-weight: bold;
+        border-color: transparent !important;
+        background-color: transparent !important;
+    }
+    .navbar-header>.navbar-brand {
+        font-size: 250% !important;
+        color: #9c27b0!important;
+        font-style: italic;
+    }
+    .navbar-header>.navbar-brand:hover {
+        text-shadow: #fff 1px 1px 2px;
+    }
+    .navbar-header>.navbar-toggle,
+    .navbar-default .navbar-collapse {
+        background-color: transparent!important;
+        border-color: transparent !important;
+    }
+    .navbar-default .nav>li>a {
+        font-size: 150% !important;
+        color: #9c27b0 !important;
+    }
+    .navbar-default .nav>li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        text-shadow: #fff 1px 1px 2px;
+    }
+    .navbar-default .nav>li.active>a,
+    .navbar-default .nav>li.active>a:focus {
+        color: #d3d3d3 !important;
+        background-color: transparent;
+    }
+}
+
+#intro {
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 250%;
+    color: #9c27b0;
+}
+
+#intro hr {
+    margin: 30%;
+    border-width: 3px;
+    opacity: 0.09;
+    margin-top: 15px;
+    margin-bottom: 15%;
+}
+
+#intro h3 {
+    color: #999;
+}
+
+#intro p {
+    color: #666;
+}
+
+@media screen and (min-width: 768px) {
+    #intro {
+        height: 100vh;
+        margin: 0 auto;
+        margin-top: 10%
+    }
+    #intro h2 {
+        font-size: 400%;
+        color: #9c27b0;
+    }
+    #intro hr {
+        margin: 3% 40% 10% 40%;
+    }
+    #intro h3 {
+        color: #999;
+    }
+    #intro p {
+        color: #666;
+    }
+}
+
+#gallary {
+    background-color: #333 !important;
+    margin: 5% 0;
+    padding: 10% 0;
+}
+
+.gallery-box {
+    display: block !important;
+    position: relative !important;
+    margin: 0 auto !important;
+    max-width: 650px !important;
+    overflow: hidden !important;
+    margin-bottom: 7% !important;
+}
+
+.gallery-box .gallery-box-caption {
+    display: block !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    text-align: center !important;
+    color: #fff !important;
+    opacity: 0 !important;
+    background: rgba(44, 44, 44, .8) !important;
+}
+
+.gallery-box .gallery-box-caption .gallery-box-content {
+    position: absolute !important;
+    top: 50% !important;
+    width: 100% !important;
+    text-align: center !important;
+    transform: translateY(-50%) !important;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-box:hover .gallery-box-caption {
+        opacity: 1 !important;
+    }
+    .gallery-box:hover img {
+        -webkit-transform: scale(1.3) !important;
+        -ms-transform: scale(1.3) !important;
+        transform: scale(1.3) !important;
+    }
+}
+
+#about {
+    text-align: center;
+}
+
+#about h2 {
+    font-family: 'Roboto', sans-serif !important;
+    margin-top: 10px !important;
+    font-size: 38px!important;
+    font-weight: 100!important;
+    color: rgb(235, 235, 235)!important;
+    line-height: 50px!important;
+    text-transform: uppercase!important;
+    font-weight: bold !important;
+}
+
+#about h2 span {
+    font-weight: lighter !important;
+    font-size: 25px;
+}
+
+#about h2~p {
+    border: .5px dotted #d3d3d3;
+    margin: 30px 75px;
+}
+
+.about-box {
+    font-family: Comic Sans, Comic Sans MS, cursive!important;
+}
+
+.about-box blockquote {
+    font-style: italic;
+    border-color: transparent;
+    margin-bottom: 10px;
+}
+
+.about-box img.img-circle {
+    width: 60% !important;
+    margin: 0 10% !important;
+}
+
+.about-box .about-social {
+    margin-bottom: 25%;
+}
+
+.about-box .about-social a {
+    padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    #about h2 {
+        font-size: 400% !important;
+        font-weight: lighter !important;
+    }
+    #about h2 span {
+        font-weight: lighter !important;
+        font-size: 65% !important;
+    }
+    #about h2~p {
+        margin: 3% 30% 10% 30%;
+    }
+    .about-box h3 {
+        font-size: 200%;
+    }
+    .about-box blockquote {
+        font-size: 125%;
+    }
+    .about-box img.img-circle {
+        width: 75% !important;
+        margin: 0 10% !important;
+    }
+    .about-box:last-child,
+    .about-box:nth-last-child(2) {
+        margin: 0 auto;
+        margin-left: 12%;
+    }
+}
+
+#footer {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
+    background-color: #333;
+    padding: 0 5%;
+}
+
+#footer h3 {
+    font-size: 150% !important;
+}
+
+#footer button {
+    background-color: #4389d8;
+}
+
+#footer p {
+    font-size: 100% !important;
+    font-weight: lighter !important;
+}
+
+#footer hr {
+    border-width: 3px;
+    opacity: 0.09;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#copyright {
+    background-color: #4389d8 !important;
+}

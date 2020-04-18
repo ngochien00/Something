@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <meta name='viewport' content="width = device-width, initial-scale = 1, maximum-scale = 1">
+    <link rel="icon" type="image/jpg" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Font_Awesome_5_regular_smile-wink.svg/768px-Font_Awesome_5_regular_smile-wink.svg.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ec811f6ffe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="https://www.youtube.com/channel/UCoRIxrDMV5diFUE0Usd_WAA" target="_blank">Something</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#gallary">Gallary</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="header">
+        <p id="space-before-video"></p>
+
+        <video autoplay="autoplay" muted="muted" loop="loop">
+            <source src="Assert/Videos/NinhBinhTrip.mp4" type="video/mp4">
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+    </header>
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Flexible Layouts</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-laptop fa-10x"></i>
+                    <h3>Responsive</h3>
+                    <p>Your site looks good everywhere</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-check fa-10x"></i>
+                    <h3>Customizable</h3>
+                    <p>Easy to theme and customize</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-star fa-10x"></i>
+                    <h3>Consistent</h3>
+                    <p>A mature, well-tested, stable codebase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallary">
+        <div class="container">
+            <div class="col-lg-4 col-sm-6">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="Assert/Images/deer.jpg">
+                    <img src="Assert/Images/deer.jpg" class="img-responsive" alt="Image 1">
+                    <div class="gallery-box-caption">
+                        hello
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="Assert/Images/beach.jpg">
+                    <img src="Assert/Images/beach.jpg" class="img-responsive preview" alt="Image 2" onmouseover="upDate(this)" onmouseout="unDo()">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="clearfix hidden-lg"> </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="Assert/Images/lake.jpg">
+                    <img src="Assert/Images/lake.jpg" class="img-responsive preview" alt="Image 3">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="Assert/Images/bike.jpg">
+                    <img src="Assert/Images/bike.jpg" class="img-responsive preview" alt="Image 4">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="clearfix hidden-lg"> </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="Assert/Images/city.jpg">
+                    <img src="Assert/Images/city.jpg" class="img-responsive preview" alt="Image 5">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="Assert/Images/colors.jpg">
+                    <img src="Assert/Images/colors.jpg" class="img-responsive preview" alt="Image 6">
+                    <div class="gallery-box-caption">
+                        <div class="gallery-box-content">
+                            <div>
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <h2>About <span>us</span></h2>
+                <p></p>
+                <div class="col-sm-6 col-md-4 about-box">
+                    <img src="Assert/Images/LeVuNgocHien.jpg" class="img-circle" alt="Lê Vũ Ngọc Hiền">
+                    <h3>Lê Vũ Ngọc Hiền</h3>
+                    <blockquote>Hãy ăn để có sức giảm cân</blockquote>
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/ngochien.levu.7"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/ngochien2909/?hl=vi"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 about-box">
+                    <img src="Assert/Images/VuMinhTrang.jpg" class="img-circle" alt="Vũ Minh Trang">
+                    <h3>Vũ Minh Trang</h3>
+                    <blockquote>Hãy ăn để có sức giảm cân</blockquote>
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/minhtrang.vu.925"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/ngochien2909/?hl=vi"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 about-box">
+                    <img src="Assert/Images/PhamBichDiep.jpg" class="img-circle" alt="Phạm Bích Diệp">
+                    <h3>Phạm Bích Diệp</h3>
+                    <blockquote>Hãy ăn để có sức giảm cân</blockquote>
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/pham.bichdiep.56"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/diephm/"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 about-box">
+                    <img src="Assert/Images/ThaiHoangDuong.jpg" class="img-circle" alt="Thái Hoàng Dương">
+                    <h3>Thái Hoàng Dương</h3>
+                    <blockquote>Hãy ăn để có sức giảm cân</blockquote>
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/hoangduong.thai.3"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/thais9300_/"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 about-box">
+                    <img src="Assert/Images/NguyenThuHa.jpg" class="img-circle" alt="Nguyễn Thu Hà">
+                    <h3>Nguyễn Thu Hà</h3>
+                    <blockquote>Hãy ăn để có sức giảm cân</blockquote>
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/profile.php?id=100006665322774"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/ngochien2909/?hl=vi"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 about-box">
+                    <img src="Assert/Images/TranPhuongThao.jpg" class="img-circle" alt="Trần Phương Thảo">
+                    <h3>Trần Phương Thảo</h3>
+                    <blockquote>Hãy ăn để có sức giảm cân</blockquote>
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/profile.php?id=100010339144760"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/_phocnghegi_/?hl=vi"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 about-box">
+                    <img src="Assert/Images/NguyenTungNam.jpg" class="img-circle" alt="Nguyễn Tùng Nam">
+                    <h3>Nguyễn Tùng Nam</h3>
+                    <blockquote>Hãy ăn để có sức giảm cân</blockquote>
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/nam.tung.754"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/nnam_2504/?hl=vi"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 about-box">
+                    <img src="Assert/Images/NgoTungLam.jpg" class="img-circle" alt="Ngô Tùng Lâm">
+                    <h3>Ngô Tùng Lâm</h3>
+                    <blockquote>Hãy ăn để có sức giảm cân</blockquote>
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/ntunglaam"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/ntunglaam/?hl=vi"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>SEND FEEDBACK</h3>
+                <p>
+                    <i class="fa fa-twitter"></i>
+                    <strong>Something</strong> always listen feedback to develop everything better
+                    <br>
+                    <strong>#Something</strong>
+                    <br>
+                    <br>
+                </p>
+                <form action="ngochien29092000@gmail.com" method="post" enctype="text/plain">
+                    <button type="submit" class="btn btn-block btn-primary">SEND FEEDBACK</button>
+                </form>
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <h3 class="title-footer-team">LIKE US ON FACEBOOK</h3>
+                <iframe src="https://www.facebook.com/ngochien.levu.7" width="300" height="240"></iframe>
+            </div>
+            <div class="col-lg-4">
+                <h3>CONTACT US</h3>
+                <i class="fa fa-home "></i> FPT University.
+                <br>
+                <i class="fa fa-phone "></i> 0123456789
+                <br>
+                <i class="fa fa-envelope-open "></i> ngochien29092000@gmail.com
+                <br>
+                <i class="fa fa-skype "></i> NgocHien
+                <br>
+                <hr>
+                <a href="#">
+                    <i class="fa fa-github-square fa-3x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-google-plus-square fa-3x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter fa-3x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-youtube fa-3x"></i>
+                </a>
+                <hr> Copyright ©, Created by
+                <strong>NgocHien</strong>. All rights reserved.
+                <i class="fa fa-heart heart"></i>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
